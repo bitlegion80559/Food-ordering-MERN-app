@@ -12,4 +12,9 @@ const VisuallyHiddenInput = styled("input")({
     whiteSpace: "nowrap",
     width: 1,
   });
-  export {VisuallyHiddenInput};
+
+  const BouncingSkeleton = styled(Skeleton)(() => ({
+    animation: `${bounceAnimation} 1s infinite`,
+  }));
+
+  export {VisuallyHiddenInput,BouncingSkeleton};
